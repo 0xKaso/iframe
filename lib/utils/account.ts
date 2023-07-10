@@ -2,6 +2,7 @@ import * as Sentry from "@sentry/nextjs";
 import { rpcClient } from "@/lib/clients/viem";
 import { implementationAbi, tokenboundAbi } from "@/lib/abi";
 import { chainId, implementationAddress, salt, tokenboundAddress } from "@/lib/constants";
+console.log("chainId",chainId)
 
 interface GetAccountStatus {
   data?: boolean;

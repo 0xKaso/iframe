@@ -2,6 +2,8 @@ import { alchemy } from "@/lib/clients";
 import useSWR from "swr";
 import { getAlchemyImageSrc, getNftAsset } from "@/lib/utils";
 
+console.log("getAlchemyImageSrc",getAlchemyImageSrc)
+
 function formatImageReturn(imageData?: string | string[]): string[] {
   if (!imageData) {
     return ["/no-img.jpg"];
