@@ -7,7 +7,7 @@ const chain = process.env.NEXT_PUBLIC_CHAIN_ID === "1" ? mainnet : goerli;
 export const publicClient = createPublicClient({
   chain: chain,
   transport: http(),
-});
+} as any);
 
 const transport = http(providerEndpoint);
 
